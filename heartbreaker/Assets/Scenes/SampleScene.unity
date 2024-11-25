@@ -8635,7 +8635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpPower: 13
+  jumpPower: 20
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -8643,7 +8643,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   wallJumpX: 1000
-  wallJumpY: 500
+  wallJumpY: 800
 --- !u!50 &1990258125
 Rigidbody2D:
   serializedVersion: 4
@@ -8659,7 +8659,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.5
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -8727,7 +8727,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: be465307fb4361c4086e5a42ed116909, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0

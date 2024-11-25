@@ -54,12 +54,14 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
         if (OnWall())
         {
-            body.gravityScale = 0;
-            body.velocity = Vector2.zero;
+            body.drag = 5;
+            body.gravityScale = 0.2f;
+            //body.velocity = Vector2.zero;
         }
         else
         {
-            body.gravityScale = 2.5f;
+            body.drag = 0;
+            body.gravityScale = 6f;
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
         }
     }
